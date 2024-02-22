@@ -1,0 +1,96 @@
+@startuml pow
+
+class Pow
+class Juego
+class Cuidado
+class Vida
+class Hogar
+class Habitacion
+class Telefono 
+class Cocina
+class Nevera
+class Comida
+class Papita
+class Cereza
+class Cuartobaño
+class Ducha
+class Higiene
+class Agua
+class Jabon
+class Laboratorio
+class Estante
+class Pocion
+class Pociónsalud
+class Medicina
+class Cuartojuego
+class Juego
+class Pelota 
+class Patineta 
+class Juegopelota
+class Dormitorio
+class Descanso
+class Almohada 
+class Confort 
+class Pasillo
+class Caminar
+class Afuera
+class Garaje
+class Auto
+class Piscina
+class Jardin 
+class Flores 
+class Mascota 
+class Porteria
+class Futbol
+class Patio
+class Flores 
+Class Nube
+class Agua
+
+
+Pow *-- Vida
+Vida *-- Cuidado
+Cuidado *-- Vida
+Cuidado *-- Juego
+Juego *-- Hogar
+Hogar o-- Habitacion
+Habitacion o-- Cocina
+Habitacion o-- Cuartobaño
+Habitacion o-- Laboratorio
+Habitacion o-- Cuartojuego
+Habitacion o-- Dormitorio
+Habitacion o-- Afuera
+Cocina *-- Nevera
+Nevera *-- Comida
+Comida *-- Papita
+Comida *-- Cereza
+Cuartobaño *-- Ducha
+Ducha o-- Higiene
+Higiene *-- Agua
+Higiene *-- Jabon
+Laboratorio *-- Estante
+Laboratorio *-- Pocion
+Laboratorio *-- Pociónsalud
+Pocion o-- Medicina
+Pociónsalud o-- Medicina
+Cuartojuego *-- Juego
+Juego <|-- Pelota
+Juego <|-- Juegopelota
+Juego <|-- Patineta
+Juego <|-- Futbol
+Futbol <|-- Porteria
+Afuera *-- Futbol
+Dormitorio *-- Descanso
+Dormitorio o-- Almohada
+Dormitorio *-- Descanso
+Descanso *-- Confort
+Pasillo *-- Afuera
+Afuera *-- Caminar
+Afuera *-- Garaje
+Garaje *-- Auto
+Afuera *-- Piscina
+Afuera *-- Jardin
+Jardin *-- Flores
+Afuera *-- Nube
+Jardin *-- Mascota
+@enduml
