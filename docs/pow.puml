@@ -1,12 +1,18 @@
 @startuml pow
 
-class Pow
+class Pow{
+    - color
+    - tamaño
+    - porcentajesalud
+    + comer()
+    + cagar ()
+    + duchar ()
+}
 class Juego
 class Cuidado
 class Vida
 class Hogar
 class Habitacion
-class Telefono 
 class Cocina
 class Nevera
 class Comida
@@ -42,7 +48,6 @@ class Flores
 class Mascota 
 class Porteria
 class Futbol
-class Patio
 class Flores 
 Class Nube
 class Agua
